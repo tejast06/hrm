@@ -3,14 +3,14 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <parameter name="os" value="windows"/>
-    <parameter name="browser" value="firefox"/>
+    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testcases.TestLogin">
+      <class name="testcases.DataDrivenTest">
         <methods>
-          <include name="verifyLogin"/>
+          <include name="verifyDataDriven"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- testcases.TestLogin -->
+      </class> <!-- testcases.DataDrivenTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -15,8 +15,21 @@ public class DashBoard extends BasePage {
 	@FindBy(xpath="//h6[text()='Dashboard']")
 	WebElement dashboard;
 	
+	@FindBy(xpath="//p[contains(@class,'oxd-userdropdown-name')]")
+	WebElement userProfile;
+	
+	@FindBy(xpath="//a[text()='Logout']")
+	WebElement logOut;
+	
 	public boolean  validateDashboardDisplayed() {
 		return dashboard.isDisplayed();
+	}
+	
+	public void clickOnLogout() throws InterruptedException {
+		userProfile.click();
+		Thread.sleep(2000);
+		logOut.click();
+		
 	}
 
 	

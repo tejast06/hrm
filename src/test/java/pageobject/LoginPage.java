@@ -24,7 +24,9 @@ public class LoginPage extends BasePage {
 	WebElement btn;
 	
 	public void enterCreds(String un,String pw) {
+		username.clear();
 		username.sendKeys(un);
+		password.clear();
 		password.sendKeys(pw);
 		btn.click();
 		
