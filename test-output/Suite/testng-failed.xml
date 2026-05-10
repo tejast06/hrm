@@ -5,12 +5,12 @@
     <parameter name="os" value="windows"/>
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testcases.DataDrivenTest">
+      <class name="testcases.TestLogin">
         <methods>
-          <include name="verifyDataDriven"/>
+          <include name="verifyLogin"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- testcases.DataDrivenTest -->
+      </class> <!-- testcases.TestLogin -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
